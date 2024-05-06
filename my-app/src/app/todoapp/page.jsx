@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-
+import style from './page.module.css'
 function Page() {
 const [add, setadd] = useState('')
 const [list,setlist]=useState(['sdsfd'])
@@ -16,7 +16,10 @@ setlist(Val=>([...Val,add]))
         {
             list&&list.map((res,ind)=>{
                 return(
-                    <p key={ind}>{res}</p>
+                    <div className={style.inp} key={ind}>
+                        <p key={ind}>{res}</p>
+                        <button>x</button>
+                    </div>
                 )
             })
         }
