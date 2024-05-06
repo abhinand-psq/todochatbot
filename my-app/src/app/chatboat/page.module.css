@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+}
+
+.two{
+    width: 30%;
+}
+
+.one {
+    width: 70%;
+}
+
+.one .com{
+    position: absolute;
+    bottom: 80px;
+}
+
+.com{
+    display: flex;
+    
+}
+
+
+.one input{
+    width: 700px;
+    height: 70px;
+    border-radius: 10px;
+}
