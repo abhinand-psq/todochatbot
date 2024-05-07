@@ -2,12 +2,13 @@ import { mongoconnection,connect } from "@/app/mongoconnection/connection";
 import { NextResponse } from "next/server";
  
 
-const one =async ()=>{
-    let value = {name:"abhinnnad"}
+const addchat =async (request)=>{
+    const data =await request.json()
+    console.log(data);
     await mongoconnection()
-    let response =await connect.db('todo').collection('aichats').insertOne(value)
-    console.log(response);
+     let response =await connect.db('todo').collection('aichats').insertOne(data)
+     console.log(response);
     return new NextResponse(JSON.stringify('connnection failed'))
 }
 
-export const GET = one
+export const POST = addchat
