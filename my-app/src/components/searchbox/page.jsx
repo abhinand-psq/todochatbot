@@ -15,11 +15,15 @@ const {chatval,setchatval} = useContext(Chatvalue)
         setchatval(val)
         router.push(`/chatboat/${newcode}`)
       }
+
+      const handleSearchanother = () => {
+        setchatval(val)
+      }
   return (
     <div>
         <input type="text"  onChange={(e)=>{setval(e.target.value)}} />
          {
-            _id ?<button>click changed</button>
+            _id ?<button onClick={()=>{handleSearchanother()}}>click changed</button>
             :
             <button onClick={()=>{handleSearch()}}>click</button>
          }
