@@ -1,39 +1,14 @@
 .main{
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    height: 100vh;
+
 }
 
-.two{
-    width: 30%;
-}
-
-.one {
-    width: 70%;
-}
-
-
-
-.com{
+.one{
     display: flex;
-   position: fixed;
-    bottom: 45px;
-    width: 70%;
+    
 }
-
-
-
-.one input{
-    width: 700px;
-    height: 70px;
-    border-radius: 10px;
-    position: fixed;
-    bottom: 45px;
-}
-
-.one button{
-    position: fixed;
-    bottom: 80px;
-    right: 300px;
+.two{
+    display: flex;
+    flex-direction: column;
+   
 }
